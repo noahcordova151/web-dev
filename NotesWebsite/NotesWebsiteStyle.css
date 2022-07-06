@@ -137,9 +137,8 @@ main section {
 }
 .main_navigation_bar .navigation_element {
     display: inline-block;
-    background-color: lightgray;
-    border-width: 1px;
-    border-style: solid;
+    background-color: none;
+    border: none;
     margin: 1px 10px 1px 0;
 }
 
@@ -152,3 +151,34 @@ main section {
         /* With other properties, 1em equals the computed font-size of the element itself */
     /* Rem's */
         /* Like em's, but relative to the root html element's font-size */
+
+/* Transparency and Opacity */
+    /* Transparency - Alpha Channel*/
+        /* rgba(red, green, blue, alpha) */
+        /* alpha controls transparency from 0.0 (transparent) to 1.0 (not transparent) */
+    /* Opacity Property */
+        /* The degree to which content behind an element is hidden, opposite of transparency */
+        /* opacity: 0.0 (opaque) to 1.0 (not opaque)*/
+
+/* Position Property */
+    /* Sets how an element is positioned in a document. ie. top, right, bottom, and left */
+    /* #element { position: static (also relative, absolute, fixed); } */
+
+/* Transition Properties */
+    /* Transition: property name | duration | timing function | delay */
+
+/* Transform Property */
+    /* transform-origin: bottom-right */
+    /* transform: rotate(0deg) scale(0.0) translate(Xpx,Ypx) */
+
+.main_navigation_bar .navigation_element .nav_button {
+    background: none;
+    color: orange;
+    border:none;
+    padding: 0.5em 1em;
+    font-size: 1em;
+}
+.main_navigation_bar .navigation_element .nav_button:hover {
+    color: orangered;
+    border-bottom: 2px solid;
+}
