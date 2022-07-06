@@ -1,0 +1,154 @@
+/* Author: Noah Cordova */
+
+/* 
+selector {
+    property: value;
+}
+*/
+h3{
+    color: grey;
+}
+
+/* Element Selectors */
+a {
+    font-size: large;
+}
+
+/* ID Selectors */
+    /*
+    #id { property:value; }
+    */
+#h2_html {
+    color: rgb(135, 177, 250);
+}
+#h2_css {
+    color: rgb(0, 0, 255);
+}
+
+/* Class Selectors */
+    /* 
+        .class { property: value; }
+    */
+.w3schools {
+    color: green;
+}
+.mozilla {
+    color: darkmagenta;
+}
+
+/* Descendant Selectors */
+    /* Applies to every element that is nested within(descended from) any other selector */
+    /* 
+        parent_selector descendant_selector { property: value; }
+    */
+
+/* Direct Child(Descendant) Selectors */
+    /* Selects elements that are direct children(first-level descendants) of another element */
+    /* 
+        parent_element > child_element { property: value; }
+    */
+
+/* Adjacent Selectors */
+    /* Selects elements that are immediately preceded by another element */
+    /* 
+        preceding_element + succeeding_element { property: value; }
+    */
+
+/* Attribute Selectors */
+    /* Selects elements with a specific type attribute */
+    /* 
+        element[type="some_type"] { property: value; }
+    */
+
+
+
+/* Pseudo-classes */
+    /* Keyword added to a selector that specifies a special state(pseudo-class) of the selected element(s) */
+    /* Selects element when they are in a state of pseudo-class */
+    /*
+        element:pseudo-class { property: value; }
+    */
+section a:hover {
+    font-weight:bolder;
+    background-color: lightgray;
+}
+
+/* Psuedo-elements */
+    /* Keyword added to a selector that lets you style a particular part of selected element(s) */
+    /* Selects part of element(pseudo-element) for every specified element */
+    /* 
+        element::pseudo-element { property: value; }
+    */
+h3::first-letter {
+    font-size: 18pt;
+}
+
+
+
+/* Cascade */
+    /* Precedence with the order that styles (and style sheets) are declared */
+    /* Succeeding styles/stylesheets take precedence over preceding styles/stylesheets when they conflict */
+
+
+
+/* Specificity */
+    /* How the browser decides which rules to apply when multiple rules could apply to the same element */
+    /* The more specific selector 'wins' */
+    /* Specificity order precedence:
+            ID > Class > Element
+            *Note: if there is a conflict w/ same types of selectors, greater number of selectors wins (by type precedence)
+            *Ex. 1 ID > 28 Class
+            *Ex. 1 ID, 2 Class > 1 ID, 1 Class, 20 Element
+    */
+    /* Inline html stlyes take precedence over ID **DO NOT USE** */
+    /* keyword "!important" after any style rule is highest precedence **DO NOT USE** */
+
+
+
+/* Inheritance */
+    /* Descendants inherit properties of their ancestors (following specificity rules) */
+    /* SOME properties are NOT inherited */
+
+/* Content Boxes (width, height, border, padding, margin) */
+main section {
+    margin-bottom: 100px;
+}
+.language_section_body {
+    width: 300px;
+    border-left-width: 3px;
+    border-left-style: solid;
+    padding-left: 10px;
+}
+#div_html {
+    border-left-color: rgb(135, 177, 250);;
+}
+#div_css {
+    border-left-color: rgb(0, 0, 255);
+}
+
+/* Display Property */
+    /* Inline: Width and height are ignored. Margin and padding push elements away horizontally, not vertically */
+    /* Block: Elements break flow of document. Width, height, margin, and padding are respected */
+    /* Inline-block: Behaves like inline except width, height, margin, and padding are respected */
+.main_navigation_bar {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+.main_navigation_bar .navigation_element {
+    display: inline-block;
+    background-color: lightgray;
+    border-width: 1px;
+    border-style: solid;
+    margin: 1px 10px 1px 0;
+}
+
+/* CSS Units */
+/* Relative Units */
+    /* Percentages */
+        /* Value from the parent or from the element itself */
+    /* Em's */
+        /* With font size, 1em equals the font-size of the parent 2em equals twice the font-size of the parent */
+        /* With other properties, 1em equals the computed font-size of the element itself */
+    /* Rem's */
+        /* Like em's, but relative to the root html element's font-size */
