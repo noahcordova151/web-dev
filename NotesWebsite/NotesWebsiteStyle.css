@@ -137,8 +137,11 @@ main section {
 }
 .main_navigation_bar .navigation_element {
     display: inline-block;
-    background-color: none;
+    background: none;
     border: none;
+    color: orange;
+    padding: 0.5em 1em;
+    font-size: 1em;
     margin: 1px 10px 1px 0;
 }
 
@@ -171,14 +174,31 @@ main section {
     /* transform-origin: bottom-right */
     /* transform: rotate(0deg) scale(0.0) translate(Xpx,Ypx) */
 
-.main_navigation_bar .navigation_element .nav_button {
-    background: none;
-    color: orange;
-    border:none;
-    padding: 0.5em 1em;
-    font-size: 1em;
-}
-.main_navigation_bar .navigation_element .nav_button:hover {
+.main_navigation_bar button.navigation_element:hover {
     color: orangered;
     border-bottom: 2px solid;
+    cursor: pointer;
+}
+
+/* Background Property */
+    /* 
+        background-image: url("https://someurl.com") or url("some/filepath");
+        background-size: cover;
+        background-position: top;
+    */
+    /* OR... */
+    /* 
+        background: center/cover url("https://someurl.com");
+    */
+
+/* Google Fonts - fonts.google.com */
+    /* Advantages: All users get to see font for free upon webpage loading */
+    /* Embed url for selected font family(ies) in html head */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+h1,h2,h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
