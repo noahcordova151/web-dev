@@ -202,3 +202,77 @@ h1,h2,h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
+
+/* Flexbox  - CSS Web Layout Model */
+    /* Turn on flexbox with...
+       element { display: flex; }   
+    */
+
+    /* Layout */
+    /* Follows two axes controlled by...
+        flex-direction: row;            //(left-to-right)
+        flex-direction: row-reverse;    //(right-to-left)
+        flex-direction: column;         //(top-to-bottom)
+        flex-direction: column-reverse; //(bottom-to-top)
+        
+    */
+
+    /* Justify Content - how content is distributed across main axis */
+    /*  
+        justify-content: flex-start;    //(default) content justified with beginning of main axis
+        justify-content: flex-end;      //content justified with end of main axis
+        justify-content: flex-center;   //content centered on main axis
+        justify-content: space-between; //space distributed evenly between elements, but not around
+        justify-content: space-around;  //space distributed evenly around elements, ie. space on ends 0.5x space between
+        justify-content: space-evenly;  //space distributed evenly between and around elements, ie. space equal on ends and between
+    */
+    
+    /* Flex Wrap - determines if elements wrap along main axis along new row (if horizontal) or new column (if vertical) */
+    /*  
+        flex-wrap: wrap;            //wraps elements in new rows/columns along normal cross-axis
+        flex-wrap: wrap-reverse;    //wraps elements in new rows/columns along reversed cross-axis
+        flex-wrap: nowrap;          //(default) elements do not wrap    
+    */
+
+    /* Align items - how content is distributed along cross-axis */
+    /* 
+        align-items: flex-start;    //(default) items aligned with beginning of cross axis
+        align-items: flex-end;      //items aligned with end of cross axis
+        align-items: flex-center;   //items centered on cross axis
+        align-items: baseline;      //items aligned along the baseline of text, not containers
+    */
+
+    /* Align content - distributes space along cross axis between rows/columns */
+        /* *Does nothing if content does not wrap */
+    /* 
+        align-content: flex-start;
+        align-content: flex-end;
+        align-content: flex-center;
+        align-content: space-between;
+        align-content: space-around;
+        align-content: space-evenly;
+    */
+
+    /* Align Self - property added to individual items in a flex container */
+    /* Controls alignment of one item along cross axis within its container */
+
+    /* Flex Sizing Properties */
+    /* Flex-basis: defines initial size of an element before additional space is distributed, along main axis */
+        /* 
+            element { flex-basis: 100px; } \
+        */
+    /* Flex-grow: controls amount of available space an element should take up (accepts unit-less number) */
+        /* 
+            element { flex-grow: 1 }    //element grows to take up all available extra space (if only element that grows)
+            element { flex-grow: 2 }    //element grows to take up available extra space, 2x as much as the other grow element of value 1
+        */
+    /* Flex-shrink: controls how/if items shrink if larger than container */
+        /*
+            element { flex-shrink: 2}   //element shrinks at 2x rate compared to other elements as container shrinks
+            element { flex-shrink: 0}   //element does not shrink at all
+        */
+    
+    /* Flex - shorthand property for all flex properties */
+        /* 
+            flex: 2 1 100px;    // flex: grow shrink basispx;
+        */
