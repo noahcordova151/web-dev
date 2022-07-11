@@ -130,13 +130,13 @@ main section {
     /* Inline: Width and height are ignored. Margin and padding push elements away horizontally, not vertically */
     /* Block: Elements break flow of document. Width, height, margin, and padding are respected */
     /* Inline-block: Behaves like inline except width, height, margin, and padding are respected */
-.main_navigation_bar {
+/* .main_navigation_bar {
     border-color: black;
     border-width: 1px;
     border-style: solid;
-}
-.main_navigation_bar .navigation_element {
-    display: inline-block;
+} */
+.navigation_bar_element {
+    /* display: inline-block; */
     background: none;
     border: none;
     color: orange;
@@ -174,7 +174,7 @@ main section {
     /* transform-origin: bottom-right */
     /* transform: rotate(0deg) scale(0.0) translate(Xpx,Ypx) */
 
-.main_navigation_bar button.navigation_element:hover {
+button.navigation_bar_element:hover {
     color: orangered;
     border-bottom: 2px solid;
     cursor: pointer;
@@ -274,5 +274,36 @@ h1,h2,h3 {
     
     /* Flex - shorthand property for all flex properties */
         /* 
-            flex: 2 1 100px;    // flex: grow shrink basispx;
+            flex: grow shrink basis
+            flex: 2 1 100px;
         */
+.main_navigation_bar {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Media Queries */
+    /* 
+        @media (some_media_feature: value) {
+            element { property: some_property; }
+        }
+    */
+    /* 
+        @media (min-width: 500px) and (max-width: 1000px) {
+            h1 { color: red; }
+        }
+
+        @media (orientation: landscape) {
+            body { background-color: blue; }
+        }
+    */
+@media (min_width: 500px) {
+    .main_navigation_bar { 
+        flex-direction: column;
+    }
+    h1 {
+        color: red;
+    } 
+}
