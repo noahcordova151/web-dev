@@ -334,3 +334,25 @@ button.navigation_bar_element:hover {
         flex-direction: column;
     }
 }
+
+/* CSS Frameworks */
+    /* Bootstrap */
+        /* Bootstrap grid */
+        /* A full row takes 12 units, expanded across by columns */
+        /* 
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-6'>This column takes 6 units(50%)</div>
+                    <div class='col-3'>This column takes 3 units(25%)</div>
+                    <div class='col'>This column takes auto-calculated 3 units(25%)</div>
+                </div>
+            </div>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-lg-4 col-md-6'>This column takes 4 units above large breakpoint, 6 units above medium breakpoint, own row otherwise</div>
+                    <div class='col-lg-4'>This column takes 3 units(25%)</div>
+                    <div class='col-lg-4'>This column takes auto-calculated 3 units(25%)</div>
+                </div>
+            </div>
+            
+        */
