@@ -356,3 +356,37 @@ button.navigation_bar_element:hover {
             </div>
             
         */
+
+/* CSS for navbar design*/
+
+#main_navbar .container-fluid {
+    padding-left: 0;
+}
+
+#main_navbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#main_navbar .navbar-brand {
+    color: #b73bb5;
+    font-size: 1.5rem;
+}
+
+#main_navbar .nav-link {
+    color: #debbde;
+}
+
+#main_navbar .nav-link:hover {
+    color: #b73bb5;
+}
+
+.navbar.scrolled {
+    background: #ff9fda;
+    transition: background 250ms;
+}
+
+.nav-link.scrolled {
+    color: white;
+    transition: background 250ms;
+}
