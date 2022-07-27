@@ -386,7 +386,7 @@ button.navigation_bar_element:hover {
     transition: background 250ms;
 }
 
-.nav-link.scrolled {
+#main_navbar .navbar-nav.nav-item.scrolled {
     color: white;
-    transition: background 250ms;
+    transition: color 250ms;
 }
