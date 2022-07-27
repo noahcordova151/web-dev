@@ -116,9 +116,6 @@ h3::first-letter {
     /* SOME properties are NOT inherited */
 
 /* Content Boxes (width, height, border, padding, margin) */
-main section {
-    margin-bottom: 100px;
-}
 .language_section_body {
     width: 300px;
     height: 100%;
